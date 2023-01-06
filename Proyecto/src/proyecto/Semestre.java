@@ -3,6 +3,7 @@ package proyecto;
 import java.util.LinkedList;
 
 public class Semestre {
+
     int numSemestre;
     LinkedList<String> asignaturas = new LinkedList<>();
 
@@ -28,4 +29,5 @@ public class Semestre {
     public void setAsignaturas(LinkedList<String> asignaturas) {
         this.asignaturas = asignaturas;
     }
+
 }

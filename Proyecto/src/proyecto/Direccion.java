@@ -1,43 +1,21 @@
-package proyecto;
+package proyectopoo;
 
 public class Direccion {
-    String calle;
-    String colonia;
-    String delegacion;
-    int codigoPostal;
 
-    public Direccion() {
+    private int numRegistro;
+    private int codigoPostal;
+    private String estado;
+    private String municipio;
+    private String tipoAs;
+    private String asentamiento;
+    private int claveOf;
+
+    public int getNumRegistro() {
+        return numRegistro;
     }
 
-    public Direccion(String calle, String colonia, String delegacion, int codigoPostal) {
-        this.calle = calle;
-        this.colonia = colonia;
-        this.delegacion = delegacion;
-        this.codigoPostal = codigoPostal;
-    }
-
-    public String getCalle() {
-        return calle;
-    }
-
-    public void setCalle(String calle) {
-        this.calle = calle;
-    }
-
-    public String getColonia() {
-        return colonia;
-    }
-
-    public void setColonia(String colonia) {
-        this.colonia = colonia;
-    }
-
-    public String getDelegacion() {
-        return delegacion;
-    }
-
-    public void setDelegacion(String delegacion) {
-        this.delegacion = delegacion;
+    public void setNumRegistro(int numRegistro) {
+        this.numRegistro = numRegistro;
     }
 
     public int getCodigoPostal() {
@@ -47,4 +25,52 @@ public class Direccion {
     public void setCodigoPostal(int codigoPostal) {
         this.codigoPostal = codigoPostal;
     }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getMunicipio() {
+        return municipio;
+    }
+
+    public void setMunicipio(String municipio) {
+        this.municipio = municipio;
+    }
+
+    public String getTipoAs() {
+        return tipoAs;
+    }
+
+    public void setTipoAs(String tipoAs) {
+        this.tipoAs = tipoAs;
+    }
+
+    public String getAsentamiento() {
+        return asentamiento;
+    }
+
+    public void setAsentamiento(String asentamiento) {
+        this.asentamiento = asentamiento;
+    }
+
+    public int getClaveOf() {
+        return claveOf;
+    }
+
+    public void setClaveOf(int claveOf) {
+        this.claveOf = claveOf;
+    }
+
+    @Override
+    public String toString() {
+        return "" + codigoPostal + " " + estado + " " + municipio + " " + tipoAs + " " + asentamiento + " " + claveOf;
+    }
+
+    
+
 }

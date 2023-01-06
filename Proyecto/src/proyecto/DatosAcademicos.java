@@ -1,11 +1,11 @@
 package proyecto;
 
 public class DatosAcademicos {
+
     int numCuenta;
     int numInscripcion;
-    Semestre semestre;
+    int semestre;
     int materiasInscritas;
-    int materiasCursadas;
     int materiasAprobadas;
     int creditosAlumno;
     int creditosIngreso;
@@ -16,12 +16,11 @@ public class DatosAcademicos {
     public DatosAcademicos() {
     }
 
-    public DatosAcademicos(int numCuenta, int numInscripcion, Semestre semestre, int materiasInscritas, int materiasCursadas, int materiasAprobadas, int creditosAlumno, int creditosIngreso, float promedio, float escolaridad, float velocidad) {
+    public DatosAcademicos(int numCuenta, int numInscripcion, int semestre, int materiasInscritas, int materiasCursadas, int materiasAprobadas, int creditosAlumno, int creditosIngreso, float promedio, float escolaridad, float velocidad) {
         this.numCuenta = numCuenta;
         this.numInscripcion = numInscripcion;
         this.semestre = semestre;
         this.materiasInscritas = materiasInscritas;
-        this.materiasCursadas = materiasCursadas;
         this.materiasAprobadas = materiasAprobadas;
         this.creditosAlumno = creditosAlumno;
         this.creditosIngreso = creditosIngreso;
@@ -46,11 +45,11 @@ public class DatosAcademicos {
         this.numInscripcion = numInscripcion;
     }
 
-    public Semestre getSemestre() {
+    public int getSemestre() {
         return semestre;
     }
 
-    public void setSemestre(Semestre semestre) {
+    public void setSemestre(int semestre) {
         this.semestre = semestre;
     }
 
@@ -62,13 +61,7 @@ public class DatosAcademicos {
         this.materiasInscritas = materiasInscritas;
     }
 
-    public int getMateriasCursadas() {
-        return materiasCursadas;
-    }
-
-    public void setMateriasCursadas(int materiasCursadas) {
-        this.materiasCursadas = materiasCursadas;
-    }
+  
 
     public int getMateriasAprobadas() {
         return materiasAprobadas;
@@ -117,4 +110,11 @@ public class DatosAcademicos {
     public void setVelocidad(float velocidad) {
         this.velocidad = velocidad;
     }
+
+    @Override
+    public String toString() {
+        return "\n\nDatosAcademicos:" + "\nnumCuenta = " + numCuenta + "\nnumInscripcion = " + numInscripcion + "\nsemestre = " + semestre + "\nmateriasInscritas = " + materiasInscritas + "\nmateriasAprobadas = " + materiasAprobadas + "\ncreditosAlumno = " + creditosAlumno + "\ncreditosIngreso = " + creditosIngreso + "\npromedio = " + promedio + "\nescolaridad = " + escolaridad + "\nvelocidad = " + velocidad + '\n';
+    }
+
+    
 }
